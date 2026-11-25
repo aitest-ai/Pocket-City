@@ -1,0 +1,554 @@
+{
+ "name": "Taipei",
+ "title": "Xingnan St, Nangang, Taipei",
+ "region": "Nangang",
+ "place": "Xingnan Street, Nangang",
+ "timezone": "Asia/Taipei",
+ "level": 3.2,
+ "flag": "<svg aria-hidden='true' viewBox='0 0 30 20'><rect width='30' height='20' fill='#d8473d'/><rect width='15' height='10' fill='#2f4f9a'/><circle cx='7.5' cy='5' r='2.6' fill='#fbf7ee'/></svg>",
+ "styles": {
+  "default": {
+   "facade": "apartment",
+   "wall": [
+    "#d6d3ca",
+    "#cbc7bb",
+    "#dad6c8",
+    "#d9cdbb"
+   ],
+   "roof": "flat",
+   "levels": 5,
+   "floor": 3.2,
+   "flatRoof": "#b9b5ab",
+   "parapet": 0.9,
+   "shop": "poi",
+   "balcony": "some",
+   "dark": "#5d5f63",
+   "glass": [
+    "#a9bdc4",
+    "#b6c8cd",
+    "#9fb4bb"
+   ],
+   "frame": "#8d8f93"
+  },
+  "rules": [
+   {
+    "if": {
+     "maxArea": 30
+    },
+    "set": {
+     "levels": 1,
+     "shop": "none",
+     "balcony": false
+    }
+   },
+   {
+    "if": {
+     "type": "hotel"
+    },
+    "set": {
+     "facade": "apartment",
+     "wall": [
+      "#d7b9a4",
+      "#dcc3ad"
+     ],
+     "levels": 5,
+     "shop": "none"
+    }
+   }
+  ]
+ },
+ "buildings": {
+  "w987090187": {
+   "levels": 8,
+   "wall": [
+    "#d7c0ac"
+   ]
+  }
+ },
+ "palette": {
+  "ground": "#ddd8cc",
+  "road": "#8f9096",
+  "pavement": "#c9c6bd",
+  "walk": "#c4c1b7",
+  "grass": "#86b95f",
+  "water": "#7bb7b9",
+  "slab": "#c9c6bd",
+  "marking": "#f4f1e8",
+  "kerb": "#b5563f",
+  "paving": "#aaa79e"
+ },
+ "paving": {
+  "style": "tiles",
+  "size": 0.6,
+  "colour": "#aaa79e"
+ },
+ "lamp": {
+  "colour": "#7a7d80",
+  "height": 7.5,
+  "head": "#f1e9cf"
+ },
+ "shops": {
+  "signs": [
+   "早餐",
+   "小吃",
+   "藥局",
+   "便利商店",
+   "美髮"
+  ],
+  "font": "'Noto Sans TC','PingFang TC',sans-serif",
+  "fascias": [
+   "#b5423a",
+   "#3f5f86",
+   "#e0b43c",
+   "#4c7a58"
+  ],
+  "awnings": [
+   "#c8503f",
+   "#3f5f86",
+   "#e0b43c"
+  ]
+ },
+ "cafes": {
+  "umbrellas": [
+   "#e8e2d4",
+   "#3f5f86"
+  ],
+  "stripes": false,
+  "table": "#efe9dc",
+  "chair": "#8a6f55"
+ },
+ "trees": {
+  "default": {
+   "style": 3,
+   "colours": [
+    "#6fa653",
+    "#84b85f"
+   ],
+   "height": 10,
+   "evergreen": true
+  },
+  "rules": [
+   {
+    "match": "Street tree",
+    "evergreen": true,
+    "vary": 0.3,
+    "mix": [
+     {
+      "style": 3,
+      "colours": [
+       "#6aa04f",
+       "#7db35a"
+      ],
+      "height": 10,
+      "share": 3
+     },
+     {
+      "style": 1,
+      "colours": [
+       "#78ac57"
+      ],
+      "height": 12,
+      "share": 2
+     }
+    ]
+   },
+   {
+    "match": "Park tree",
+    "evergreen": true,
+    "vary": 0.35,
+    "mix": [
+     {
+      "style": 3,
+      "colours": [
+       "#6aa04f",
+       "#7db35a"
+      ],
+      "height": 11,
+      "share": 4
+     },
+     {
+      "style": 1,
+      "colours": [
+       "#78ac57"
+      ],
+      "height": 13,
+      "share": 2
+     },
+     {
+      "style": 2,
+      "colours": [
+       "#5f9a4c"
+      ],
+      "height": 9,
+      "share": 1
+     }
+    ]
+   }
+  ],
+  "extra": [
+   [
+    -96.6,
+    -37.5,
+    9.0,
+    "Street tree"
+   ],
+   [
+    -95.4,
+    -52.4,
+    10.2,
+    "Street tree"
+   ],
+   [
+    -83.6,
+    -36.5,
+    11.4,
+    "Street tree"
+   ],
+   [
+    -82.5,
+    -51.4,
+    12.6,
+    "Street tree"
+   ],
+   [
+    -69.2,
+    -49.9,
+    9.0,
+    "Street tree"
+   ],
+   [
+    -56.3,
+    -48.2,
+    10.2,
+    "Street tree"
+   ],
+   [
+    -43.4,
+    -46.5,
+    11.4,
+    "Street tree"
+   ],
+   [
+    -30.5,
+    -44.8,
+    12.6,
+    "Street tree"
+   ],
+   [
+    -19.6,
+    -28.3,
+    9.0,
+    "Street tree"
+   ],
+   [
+    -17.6,
+    -43.1,
+    10.2,
+    "Street tree"
+   ],
+   [
+    -5.5,
+    -26.8,
+    11.4,
+    "Street tree"
+   ],
+   [
+    7.5,
+    -27.0,
+    12.6,
+    "Street tree"
+   ],
+   [
+    20.5,
+    -27.3,
+    9.0,
+    "Street tree"
+   ],
+   [
+    33.5,
+    -27.6,
+    10.2,
+    "Street tree"
+   ],
+   [
+    46.4,
+    -27.7,
+    11.4,
+    "Street tree"
+   ],
+   [
+    59.4,
+    -27.8,
+    12.6,
+    "Street tree"
+   ],
+   [
+    72.4,
+    -27.9,
+    9.0,
+    "Street tree"
+   ],
+   [
+    85.4,
+    -28.0,
+    10.2,
+    "Street tree"
+   ]
+  ]
+ },
+ "people": {
+  "clothes": [
+   "#3d4a5e",
+   "#e8e2d2",
+   "#b8473f",
+   "#5b7d5e",
+   "#e0b43c",
+   "#6d5a7c",
+   "#2f3a4a"
+  ],
+  "umbrellas": [
+   "#2f3a4a",
+   "#b8473f",
+   "#3f5f86",
+   "#e8e2d2"
+  ]
+ },
+ "vehicles": {
+  "kinds": [
+   "small",
+   "hatch",
+   "sedan",
+   "mpv"
+  ],
+  "colours": [
+   "#f2f2ee",
+   "#2e3139",
+   "#a9b0b8",
+   "#8a2f2f",
+   "#3f5f86"
+  ],
+  "plate": "#f4f4f0",
+  "taxi": {
+   "share": 0.3,
+   "colours": [
+    "#f2c230"
+   ],
+   "kind": "sedan",
+   "sign": "#fff3b0"
+  }
+ },
+ "seasonLabel": "Weather",
+ "seasons": [
+  {
+   "id": "hot",
+   "label": "Hot summer",
+   "leaves": "summer",
+   "haze": 0.35,
+   "crowd": 0.8,
+   "icon": "summer",
+   "note": {
+    "text": "Taipei summers are long, very hot and humid.",
+    "source": "Wikipedia: Taipei",
+    "url": "https://en.wikipedia.org/wiki/Taipei"
+   }
+  },
+  {
+   "id": "typhoon",
+   "label": "Typhoon season",
+   "leaves": "summer",
+   "wet": true,
+   "wx": "rain",
+   "umbrellas": true,
+   "crowd": 0.6,
+   "icon": "autumn",
+   "note": {
+    "text": "Taiwan's typhoon season runs from June to October.",
+    "source": "Wikipedia: Taipei",
+    "url": "https://en.wikipedia.org/wiki/Taipei"
+   }
+  },
+  {
+   "id": "winter",
+   "label": "Foggy winter",
+   "leaves": "summer",
+   "coats": true,
+   "wx": "drizzle",
+   "wet": true,
+   "umbrellas": true,
+   "crowd": 0.9,
+   "icon": "winter",
+   "note": {
+    "text": "Taipei winters are short, generally warm and often foggy under northeasterly winds.",
+    "source": "Wikipedia: Taipei",
+    "url": "https://en.wikipedia.org/wiki/Taipei"
+   }
+  }
+ ],
+ "occasionLabel": "Special scenes",
+ "occasions": [
+  {
+   "id": "zhongyuan",
+   "label": "Ghost Festival",
+   "crowd": 1.2,
+   "decor": {
+    "lanterns": [
+     "#c8503f",
+     "#e0b43c"
+    ],
+    "lanternGap": 6
+   },
+   "note": {
+    "text": "Zhongyuan falls on the 15th day of the seventh lunar month, with rites to save wandering souls.",
+    "source": "Wikipedia: 中元節",
+    "url": "https://zh.wikipedia.org/wiki/中元節"
+   }
+  }
+ ],
+ "months": [
+  "winter",
+  "winter",
+  "winter",
+  "hot",
+  "hot",
+  "hot",
+  "hot",
+  "typhoon",
+  "typhoon",
+  "typhoon",
+  "winter",
+  "winter"
+ ],
+ "isoLabel": "Nangang overview",
+ "cameras": {
+  "iso": {
+   "yaw": -35,
+   "pitch": 33,
+   "zoom": 0.93,
+   "x": 0,
+   "y": 0,
+   "z": 4
+  }
+ },
+ "views": [
+  {
+   "id": "ctv",
+   "label": "China Television",
+   "camera": {
+    "yaw": 35,
+    "pitch": 26,
+    "zoom": 2.4,
+    "x": -55,
+    "y": 25,
+    "z": 8
+   }
+  },
+  {
+   "id": "street",
+   "label": "Xingnan Street",
+   "camera": {
+    "yaw": -25,
+    "pitch": 22,
+    "zoom": 3.4,
+    "x": -20,
+    "y": -34,
+    "z": 2.5
+   }
+  }
+ ],
+ "legend": [
+  {
+   "name": "China Television HQ",
+   "source": "OSM footprint · Commons photo",
+   "count": "1",
+   "icon": "landmark",
+   "camera": {
+    "yaw": 35,
+    "pitch": 26,
+    "zoom": 2.4,
+    "x": -55,
+    "y": 25,
+    "z": 8
+   }
+  },
+  {
+   "name": "Apartment blocks",
+   "source": "OpenStreetMap",
+   "count": "66",
+   "icon": "buildings",
+   "camera": {
+    "yaw": -35,
+    "pitch": 30,
+    "zoom": 2.2,
+    "x": 10,
+    "y": 20,
+    "z": 4
+   }
+  },
+  {
+   "name": "Streets",
+   "source": "OpenStreetMap",
+   "count": "",
+   "icon": "road",
+   "camera": {
+    "yaw": -25,
+    "pitch": 22,
+    "zoom": 3.4,
+    "x": -20,
+    "y": -34,
+    "z": 2.5
+   }
+  }
+ ],
+ "notes": [
+  {
+   "title": "China Television HQ",
+   "text": "The company moved its headquarters to Nangang in 1986; the main building opened on 2 Feb 1987 and the second building was completed in 1999. Walls, glass crown and mast are traced from one Commons photo; the gold lettering is not drawn.",
+   "links": [
+    {
+     "label": "Wikipedia: 中國電視公司",
+     "url": "https://zh.wikipedia.org/wiki/中國電視公司"
+    },
+    {
+     "label": "Commons photo (CC BY-SA 4.0, Solomon203)",
+     "url": "https://commons.wikimedia.org/wiki/File:China_Television_Building_and_traffic_signal_cabinet_20191027.jpg"
+    }
+   ]
+  },
+  {
+   "title": "Everyday blocks",
+   "text": "Older apartments on Chongyang Road have grey-white walls, window grilles, air-conditioner units and shops at street level. Storey counts (5) are illustrative: OpenStreetMap has no heights for 66 of the 68 buildings.",
+   "links": [
+    {
+     "label": "Commons photo, Chongyang Road",
+     "url": "https://commons.wikimedia.org/wiki/File:Yakult_Taiwan_831-RU_left_side_on_Chongyang_Road_20131025.jpg"
+    }
+   ]
+  },
+  {
+   "title": "Street trees",
+   "text": "Photos of Chongyang Park and Chongyang Road show broadleaf street trees, grey tile pavement and a red kerb band; the species, count and positions drawn here are illustrative.",
+   "links": [
+    {
+     "label": "Commons photo, Chongyang Park",
+     "url": "https://commons.wikimedia.org/wiki/File:Chongyang_Park_bus_shelter_and_zebra_crossing_20100426.jpg"
+    }
+   ]
+  },
+  {
+   "title": "Illustrative",
+   "text": "Ghost Festival lanterns, weather effects, traffic and people are illustrative. House no. 62 is not mapped in OpenStreetMap; the plot sits on Xingnan Street between lanes 60 and 64.",
+   "links": [
+    {
+     "label": "OpenStreetMap",
+     "url": "https://www.openstreetmap.org/"
+    }
+   ]
+  }
+ ],
+ "credits": [
+  {
+   "label": "Wikimedia Commons photos (CC BY-SA 4.0)",
+   "url": "https://commons.wikimedia.org/"
+  }
+ ]
+}
